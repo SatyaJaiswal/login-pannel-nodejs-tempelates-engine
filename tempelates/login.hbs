@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .login{
+            width: 450px;
+            height: 200px;
+            background-color: aliceblue;
+            margin-top: 10%;
+            margin-left: 35%;
+            border-radius: 10px;
+        }
+        .login form{
+            text-align: center;
+        }
+       .login h2{
+        color: red;
+        text-align: center;
+       }
+       .submit{
+        margin-top: 25px;
+        margin-left: 100px;
+        width: 35%;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+
+       }
+       .submit a{
+        text-decoration: none;
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Login page</h2>
+    <form action="/login" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit">
+    </form>
+    <div class="submit">
+        <a href="/signup">Make a new account</a>
+    </div>
+    </div>
+   
+</body>
+</html>

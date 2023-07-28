@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+      <style>
+        .signup{
+            width: 450px;
+            height: 200px;
+            background-color: aliceblue;
+            margin-top: 10%;
+            margin-left: 35%;
+            border-radius: 10px;
+        }
+        .signup form{
+            text-align: center;
+        }
+       .signup h2{
+        color: red;
+        text-align: center;
+       }
+       .submit{
+        margin-top: 25px;
+        margin-left: 100px;
+        width: 35%;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+
+       }
+       button{
+        margin-top: 35px;
+       }
+       button a{
+        color: rgb(8, 8, 96);
+        text-decoration: none;
+       }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    {{!-- <link rel="stylesheet" href="/public/signup.css"> --}}
+</head>
+<body>
+  <div class="signup">
+      <h2>Sigup form</h2>
+    <form action="/signup" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="password" name="password" placeholder="password">
+        <input type="submit">
+        <button>
+            <a href="/login">Go back</a>
+        </button>
+    </form>
+  </div>
+</body>
+</html>
